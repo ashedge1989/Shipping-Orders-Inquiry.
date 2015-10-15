@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Context>
+
+	<!-- Configure the DataBase -->
+	<!-- Run the script file for database before running the code. -->
+	<!-- Please change the userName and password per your need. Also use ONLY  'TomCat'  server. -->
+
+	<Resource 
+		name="jdbc/connectionConfig" 
+		
+		auth="Container" 
+		type="javax.sql.DataSource"
+		driverClassName="com.mysql.jdbc.Driver"
+		
+		url="jdbc:mysql://localhost:3306/odysseytransport"
+		username="root" 
+		password="root" 
+		 
+		maxActive="10" 
+		maxIdle="2" 
+	/>
+
+</Context>
+
+

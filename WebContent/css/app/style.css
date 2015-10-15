@@ -1,0 +1,173 @@
+@CHARSET "ISO-8859-1";
+
+
+body {
+    	background-color: #CC5027; /* orange*/
+    	background-attachment: scroll; 
+    	font-family: 'PT Sans', Arial, sans-serif;
+}
+
+header {
+  background-color: #FDF3E7; /* milky white */
+  text-align: center;
+  border-radius: 35px 2px 35px 2px;
+  height: 100px;
+  font-size: 30px;
+  width: 60%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+nav {
+  /*element background color*/
+  background-color: #FDF3E7;
+  /*rounded edges*/
+  border-radius: 20px 5px 20px 5px;
+  font-size: 50%;
+  /*align center*/
+  margin-left:auto;
+  margin-right:auto;
+}
+
+article {
+  font-size: 10px;
+  height: 400px;
+  background-color: #FDF3E7;
+  border-radius: 35px 2px 35px 2px;
+  width: 60%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
+}
+
+section {
+  position: relative; /*place it relative to its original position*/
+  /*background-color: #e5e5e5;*/
+  height:95%;
+  width:95%;
+  margin-left:auto;
+  margin-right:auto;
+  top:10px;
+  
+  border-radius: 20px 5px 20px 5px;
+}
+
+footer{
+  background-color: #FDF3E7;
+  border-radius: 35px 2px 35px 2px;
+  height: 50px;
+  width: 60%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
+  margin-bottom: 20px;
+}
+
+#phoneNumber{
+  float:right;
+}
+
+.siteName{
+  color: #3B3738;    /* dark gray */
+} 
+
+#siteMainName{
+  text-shadow: 1px 1px 1px #3B3738, 
+               3px 3px 5px #CC5027; /*span is inline*/
+}
+
+.navigationList {
+  color: red;
+}
+
+h3, h4, h5,td{
+  color: #7E8F7C;  /* light gray */
+}
+
+.resNote, th {
+  font-size: 13px;
+  color: #3B3738;    /* dark gray */
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
+
+.navigationList li {
+  float: left;  /*arrange elements side by side*/
+  list-style-type:none; /*remove numbers or bullets*/
+}
+
+.navOption {
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: normal;
+  color: #3B3738;
+  
+  display: block;
+  width: auto; /*takes as per the content*/
+  background-color: #7E8F7C;
+  border-radius: 10px 5px 10px 5px; /*curve the edges of block*/
+  padding: 5px; /*distn betn content adn border*/
+  box-shadow: 0px 2px 3px 0px;
+  margin-right: 30px;
+  margin-bottom: 5px; /*shift the element 5px from top*/
+}
+
+#orderInfo{
+  
+  position: relative; /*place it relative to its original position*/
+  /*background-color: red;*/
+  height:95%;
+  width:95%;
+  margin-left:auto;
+  margin-right:auto;
+  top:10px;
+}
+
+.orderContent {
+    overflow-y:auto;
+    height:100%;
+    margin-top: 20px;
+    /* border: 1px solid; */ 
+}
+
+.footerInfo{
+  position: relative;
+  top:15px;
+  left:10px;
+  font-size: 13px;
+  color:#3B3738;
+}
+
+
+#reservationTextMsg{
+  float:left; 
+}
+
+.lookUpOrder{
+	font-size: 13px;
+}
+
+.createOrder{
+	font-size: 13px;
+}
+
+
+/* individual view of create or lookup */
+.box {
+	padding: 20px;
+	display: none;
+	margin-top: 20px;
+}
+
+
+/* JSON object tree view */
+#tree1 {
+	width: 80%;
+	font-size: 13px;
+}
+
+

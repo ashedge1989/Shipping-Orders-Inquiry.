@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+
+
+	<!-- This page is displayed upon application start -->
+	<welcome-file-list>
+		<welcome-file>view/OdysseOrderHome.jsp</welcome-file>
+	</welcome-file-list>
+
+
+
+	<!-- Map the servlet name to the intended java class  -->
+	<servlet>
+		<servlet-name>CreateOrderServlet</servlet-name>
+		<servlet-class>org.odyssey.handler.CreateOrderServlet</servlet-class>
+		<!-- <load-on-startup>1</load-on-startup> -->
+	</servlet>
+	<servlet>
+		<servlet-name>LookUpOrderServlet</servlet-name>
+		<servlet-class>org.odyssey.handler.LookUpOrderServlet</servlet-class>
+	</servlet>
+
+
+
+	<!-- Map the incoming request to a specific Servlet  -->
+	<servlet-mapping>
+		<servlet-name>CreateOrderServlet</servlet-name>
+		<url-pattern>/orderItem</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LookUpOrderServlet</servlet-name>
+		<url-pattern>/lookup</url-pattern>
+	</servlet-mapping>
+
+
+
+	<listener>
+		<listener-class>org.odyssey.config.ConfigOdysseyTransportation</listener-class>
+	</listener>
+
+
+	
+	<context-param>
+		<param-name>dictionaryFileName</param-name>
+		<param-value>en_US_1.txt</param-value>
+	</context-param>
+	
+	<!-- Change this parameter as per the requirements. Mention the entire path upto the file. -->
+	<context-param>
+		<param-name>inputFilePath</param-name>
+		<param-value>F:/My Study/Odyssey Project/</param-value>
+	</context-param>
+
+
+
+</web-app>
+
+
